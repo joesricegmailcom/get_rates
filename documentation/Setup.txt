@@ -1,0 +1,78 @@
+1. Switch terminal to bash
+	cash -s /bin/bash
+	quit and reopen terminal
+
+2. Install Homebrew
+
+3. Install pyenv
+	brew install pyenv
+
+4. Install python 3.8.5
+   	pyenv install 3.8.5
+
+5. Set as global
+	pyenv global 3.8.5
+	pyenv version
+
+6. Update .bash_profile
+	echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+	quit and reopen terminal
+	(I had to edit the .bash_profile file to delete all of the spaces before eval and then add only two back)
+    
+7. Test python version
+	python -V
+	which python
+
+8. Upgrade pip
+	pip install -- upgrade pip
+
+9. Install virtualenv
+	pip install virtualenv
+
+10. Test virtualenv
+	virtualenv --version
+
+11. Create virtualenvs directory
+	cd ~
+	mkdir virtualenvs
+
+12. Create dev directory
+	cd ~
+	mkdir dev
+
+-- INSTALL GIT
+
+13. Clone get_rates
+	git clone https://github.com/joesricegmailcom/get_rates.git
+
+
+
+
+
+2. pip3 install virtualenv
+
+3. cd ~
+
+4. mkdir virtualenvs
+
+5. virtualenv familypokernight
+
+6. . familypokernight/bin/activate
+
+7. export FLASK_APP=familypokernight.python
+
+8. export FLASK_ENV=development
+
+9. cd familypokernight
+
+10. flask run
+
+11. http://localhost:5000
+
+To Start Virtual Environment
+1. cd virtualenvs
+2. . familypokernight/bin/activate
+
+To Stop Virtual Environment
+1. cd virtualenvs
+2. deactivate

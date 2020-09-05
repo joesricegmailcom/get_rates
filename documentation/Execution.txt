@@ -1,0 +1,15 @@
+6. . familypokernight/bin/activate
+
+7. export FLASK_APP=familypokernight.python
+
+8. export FLASK_ENV=development
+
+9. cd familypokernight
+
+10. flask run
+
+11. http://localhost:5000
+
+SAVE PIP REQUIREMENTS
+pip freeze > requirements.txt
+pip install -r requirements.txt
